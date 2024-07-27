@@ -31,6 +31,9 @@
     </ul>
   </li>
 </ol>
+<h2>Screenshots</h2>
+![calculadoraFX](https://github.com/user-attachments/assets/a4a24b3b-2db5-41db-83f6-47d985161ab2)
+
 <h2>Uso</h2>
 <ul>
   <li>Al iniciar la aplicación, verás una ventana con una interfaz de calculadora.</li>
