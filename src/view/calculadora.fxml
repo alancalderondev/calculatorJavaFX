@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="338.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculadoraController">
+    <stylesheets>
+        <URL value="@../css/calculadora.css" />
+    </stylesheets>
+    <children>
+        <GridPane layoutX="29.0" layoutY="92.0" prefHeight="250.0" prefWidth="280.0" styleClass="grid-pane">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="60.0" prefWidth="70.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="60.0" prefWidth="70.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="60.0" prefWidth="70.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="60.0" prefWidth="70.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="60.0" prefHeight="60.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="60.0" prefHeight="60.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="60.0" prefHeight="60.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="60.0" prefHeight="60.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="60.0" prefHeight="60.0" valignment="CENTER" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="btnC" mnemonicParsing="false" onMouseClicked="#clearAll" styleClass="button special" text="C" GridPane.columnIndex="1" />
+                <Button fx:id="btnDivide" mnemonicParsing="false" onMouseClicked="#Operacion" styleClass="button special" text="÷" GridPane.columnIndex="3" />
+                <Button fx:id="btnMultiply" mnemonicParsing="false" onMouseClicked="#Operacion" styleClass="button special" text="×" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button fx:id="btnSubtract" mnemonicParsing="false" onMouseClicked="#Operacion" styleClass="button special" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Button fx:id="btn7" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="7" GridPane.rowIndex="1" />
+                <Button fx:id="btn8" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button fx:id="btn9" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button fx:id="btnAdd" mnemonicParsing="false" onMouseClicked="#Operacion" styleClass="button special" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Button fx:id="btn4" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="4" GridPane.rowIndex="2" />
+                <Button fx:id="btn5" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="btn6" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button fx:id="btnEqual" mnemonicParsing="false" onMouseClicked="#result" styleClass="button result" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                <Button fx:id="btn1" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="1" GridPane.rowIndex="3" />
+                <Button fx:id="btn2" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button fx:id="btn3" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Button fx:id="btn0" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Button fx:id="btnDot" mnemonicParsing="false" onMouseClicked="#Add" styleClass="button" text="." GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <Button fx:id="btnPlusMinus" mnemonicParsing="false" onMouseClicked="#Change" styleClass="button special" text="+/-" GridPane.rowIndex="4" />
+                <Button fx:id="btnCE" mnemonicParsing="false" onMouseClicked="#ClearNumber" styleClass="button special" text="CE" />
+            <Button fx:id="btnSPR" mnemonicParsing="false" onMouseClicked="#deleteOne" styleClass="button special" text="spr" GridPane.columnIndex="2" />
+            </children>
+        </GridPane>
+        <Text fx:id="displayText" fill="WHITE" layoutX="29.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="0" textAlignment="RIGHT" wrappingWidth="280.0">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

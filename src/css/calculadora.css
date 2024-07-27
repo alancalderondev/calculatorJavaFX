@@ -1,0 +1,50 @@
+/* calculadora.css */
+
+/* Estilo principal del contenedor */
+.mainFxmlClass {
+    -fx-background-color: #1e1e1e; /* Fondo oscuro para el contenedor principal */
+}
+
+/* Estilo para el GridPane (la cuadrícula de botones) */
+.grid-pane {
+    -fx-background-color: #2d2d2d; /* Fondo de la cuadrícula de botones */
+    -fx-padding: 10px;
+}
+
+/* Estilo para los botones */
+.button {
+    -fx-background-color: #3c3c3c; /* Color de fondo para botones */
+    -fx-text-fill: #e0e0e0; /* Color del texto */
+    -fx-font-size: 18px; /* Tamaño del texto en los botones */
+    -fx-font-weight: bold;
+    -fx-min-width: 55px; /* Ancho mínimo de los botones */
+    -fx-min-height: 55px; /* Altura mínima de los botones */
+    -fx-pref-width: 55px; /* Ancho preferido de los botones */
+    -fx-pref-height: 55px; /* Altura preferida de los botones */
+    -fx-border-color: #444; /* Color del borde */
+    -fx-border-width: 1px; /* Ancho del borde */
+    -fx-background-insets: 0, 0 0 1, 0;
+    -fx-background-radius: 5px; /* Radio del borde */
+    -fx-border-radius: 5px; /* Radio del borde del botón */
+}
+
+.button:hover {
+    -fx-background-color: #4c4c4c; /* Color de fondo al pasar el ratón sobre el botón */
+}
+
+.button:pressed {
+    -fx-background-color: #5c5c5c; /* Color de fondo al presionar el botón */
+}
+
+/* Estilo para los botones con funciones especiales */
+.button.special {
+    -fx-background-color: #555; /* Color de fondo para botones especiales */
+}
+
+/* Estilo para el botón de resultado (=) */
+.button.result {
+    -fx-background-color: #ff8c00; /* Color de fondo para el botón de resultado */
+    -fx-text-fill: #fff; /* Color del texto para el botón de resultado */
+}
+
+
