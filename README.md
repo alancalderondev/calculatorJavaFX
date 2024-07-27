@@ -1,4 +1,4 @@
-<h1 align="center">🧮 Calculadora en JavaFX 🧮</h1>
+<h1 align="center">🖩 Calculadora en JavaFX 🖩</h1>
 
 ## Bienvenido al proyecto Calculadora implementado con JavaFX. Esta aplicación es una calculadora básica que permite realizar operaciones matemáticas simples como suma, resta, multiplicación y división. El proyecto está desarrollado utilizando JavaFX en el entorno de desarrollo NetBeans.
 <h2>Características</h2>
